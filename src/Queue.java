@@ -11,17 +11,17 @@ public class Queue {
         queueList.addLast(data);
     }
 
+    public void dequeue() {
+        if (!queueList.isEmpty()) {
+            queueList.removeFirst();
+        } else {
+            System.out.println("Queue is empty");
+        }
+    }
+
     public void display() {
         System.out.println(queueList);
     }
 
-    public static void main(String[] args) {
-        Queue queue = new Queue();
-        queue.enqueue(56);
-        queue.enqueue(30);
-        queue.enqueue(70);
-
-
-        queue.display();
-    }
+ 
 }
